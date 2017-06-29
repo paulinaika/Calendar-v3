@@ -73,6 +73,6 @@ class AdvisorsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def advisor_params
-      params.require(:advisor).permit(:start_time, :end_time, :recurring, :name)
+      params.require(:advisor).permit(:start_time, :end_time, :recurring, :name, :booking_id)
     end
 end
