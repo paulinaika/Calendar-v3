@@ -2,6 +2,7 @@ class Advisor < ApplicationRecord
   serialize :recurring, Hash
   has_many :schedule_exceptions
   has_many :bookings
+  has_many :users, through: :bookings
 
   def recurring=(value)
     if value == "null"

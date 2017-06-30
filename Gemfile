@@ -5,6 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem 'devise'
 gem "simple_calendar"
 gem "recurring_select", github:"RundownApp/recurring_select"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

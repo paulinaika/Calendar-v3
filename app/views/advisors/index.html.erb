@@ -7,7 +7,9 @@
     <% advisors.each do |advisor| %>
      <% puts advisor.inspect %>
       <div>
-        <%= link_to advisor.name, advisor_path(advisor.id) %>
+        <%= link_to advisor.name %>
+
+        <%#= link_to advisor.name,  new_booking_booking_path(booking.id, advisor.id) %>
         <%#= advisor.start_time.strftime("%I:%M%p")%>
         <%#= advisor.end_time.strftime("%I:%M%p")%>
       </div>
